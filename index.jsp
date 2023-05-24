@@ -40,7 +40,7 @@
     <button onclick="displayText('Text from button 1')">Button 1</button>
     <button onclick="displayText('Text from button 2')">Button 2</button>
     <button onclick="displayText('Text from button 3')">Button 3</button>
-    <button onclick="goBack()">Button 4</button>
+    <button onclick="window.location.href='http://localhost:8080/YuvalKitzonyNoaYarkoniYoniYirmiyahuRazRachman/';">Button 4</button>
     <p id="display"></p>
 </body>
 </html>
