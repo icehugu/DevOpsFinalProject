@@ -1,44 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>JSP Example</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
         }
-        #displayMessage {
-            display: none;
-            font-size: 1.5em;
-            color: #007BFF;
-            margin-top: 20px;
-        }
-        .myButton {
-            font-size: 1.2em;
+        button {
+            margin: 10px;
             padding: 10px 20px;
-            background-color: #007BFF;
-            color: #ffffff;
             border: none;
             border-radius: 5px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
             cursor: pointer;
         }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
-</head>
-<body>
-    <div>
-        <button class="myButton" onclick="displayMessage()">Click Me!</button>
-        <p id="displayMessage">Hello, You have clicked the button!</p>
-    </div>
-
     <script>
-        function displayMessage() {
-            document.getElementById("displayMessage").style.display = "block";
+        function displayText(text) {
+            document.getElementById('display').innerText = text;
         }
     </script>
+</head>
+<body>
+    <button onclick="displayText('Text from button 1')">Button 1</button>
+    <button onclick="displayText('Text from button 2')">Button 2</button>
+    <button onclick="displayText('Text from button 3')">Button 3</button>
+    <p id="display"></p>
 </body>
 </html>
