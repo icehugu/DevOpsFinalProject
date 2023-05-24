@@ -31,7 +31,7 @@
 </head>
 <body>
     <div>
-        <button class="myButton" onclick="displayMessage()">Click Me!!!</button>
+        <button class="myButton" onclick="displayMessage()">Click Me!</button>
         <p id="displayMessage">Hello, You have clicked the button!</p>
     </div>
 
