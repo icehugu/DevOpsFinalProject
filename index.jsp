@@ -31,9 +31,6 @@
         function displayText(text) {
             document.getElementById('display').innerText = text;
         }
-        function goBack() {
-            <a href="http://localhost:8080/YuvalKitzonyNoaYarkoniYoniYirmiyahuRazRachman/">go back</a>
-        }
     </script>
 </head>
 <body>
